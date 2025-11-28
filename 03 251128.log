@@ -1,0 +1,68 @@
+    1  pwd
+    2  mkdir ch02
+    3  cd ch02
+    4  pwd
+    5  mkdir one two three
+    6  ls
+    7  mkdir -p one/tmp/test
+    8  ls -R one
+    9  rmdir one
+   10  rmdir two three
+   11  ls
+   12  cd ..
+   13  pwd
+   14  less /etc/services
+   15  cd ch02
+   16  cp /etc/hosts test.org
+   17  ls
+   18  mkdir test
+   19  ls
+   20  cp test.org test
+   21  ls test
+   22  ls
+   23  mv test/test.org test/test.bak
+   24  ls test
+   25  rm test.org
+   26  ls
+   27  cp test/test.bak test.org
+   28  ls
+   29  rm -r test one
+   30  ls
+   31  ln test.org test.ln
+   32  ls
+   33  ln test.org test.ln2
+   34  ls
+   35  ls -i
+   36  echo "test.org, ln1, ln2 모두 inode 번호가 같다"
+   37  ls -l
+   38  mkdir temp
+   39  ln -s temp tmp
+   40  ls -l tmp
+   41  ls
+   42  ls -i
+   43  echo "심볼릭 링크는 새로운 파일이라서 inode 번호가 다르다"
+   44  rm -r test.ln test.ln2 tmp test.org temp
+   45  ls
+   46  grep -n NETBIOS /etc/services
+   47  find ~ -name data1.cp
+   48  cp -i /etc/hosts text1
+   49  ls
+   50  mkdir temp
+   51  cp text1 temp
+   52  ls
+   53  ls temp
+   54  cp text1 temp/text2
+   55  ls temp
+   56  cp /etc/hosts /etc/services temp
+   57  ls temp
+   58  mv text1 data1
+   59  ls
+   60  cp data1 data1.cp
+   61  ls -i
+   62  find ~ -name data1.cp
+   63  find / -name data1.cp
+   64  find ~ -name data1.cp
+   65* ls 
+   66  find ~ -name data1.cp -exec mv {} temp \;
+   67  ls temp
+   68  history > 03\ 251128.log
