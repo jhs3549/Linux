@@ -1,0 +1,11 @@
+    1  history
+    2  git --version
+    3  git config --global user.email "michael3549@naver.com"
+    4  git config --global user.name "jhs3549"
+    5  git init
+    6  echo "Hello World"
+    7  whoami
+    8  id
+    9  id root
+   10  htop
+   11  history > 01\ 251128.log
